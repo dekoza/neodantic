@@ -10,6 +10,14 @@ repository = "https://github.com/dekoza/neodantic"
 documentation = "https://neodantic.readthedocs.io"
 classifiers = [
     "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Database",
+    "Topic :: Database :: Database Engines/Servers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
 ]
 
 [tool.poetry.urls]
@@ -17,9 +25,13 @@ Changelog = "https://github.com/dekoza/neodantic/releases"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-click = ">=8.0.1"
+neo4j = "^5.0.1"
+pydantic = "^1.10.2"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.scripts]
+neodantic = "neodantic.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
 Pygments = ">=2.10.0"
 black = ">=21.10b0"
 coverage = {extras = ["toml"], version = ">=6.2"}
@@ -44,11 +56,6 @@ sphinx-click = ">=3.0.2"
 typeguard = ">=2.13.3"
 xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
-
-[tool.poetry.scripts]
-neodantic = "neodantic.__main__:main"
-
-[tool.poetry.group.dev.dependencies]
 nox = "^2022.8.7"
 nox-poetry = "^1.0.1"
 

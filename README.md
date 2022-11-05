@@ -1,5 +1,7 @@
 # Neodantic
 
+Neodantic is an async OGM for Neo4j made using pydantic.
+
 [![PyPI](https://img.shields.io/pypi/v/neodantic.svg)][pypi_]
 [![Status](https://img.shields.io/pypi/status/neodantic.svg)][status]
 [![Python Version](https://img.shields.io/pypi/pyversions/neodantic)][python version]
@@ -39,7 +41,7 @@ $ pip install neodantic
 
 ## Usage
 
-Please see the [Command-line Reference] for details.
+- TODO
 
 ## Contributing
 
@@ -58,8 +60,10 @@ please [file an issue] along with a detailed description.
 
 ## Credits
 
+Inspired by [@tiangolo]'s work - FastAPI and SQLModel.
 This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
 
+[@tiangolo]: https://github.com/tiangolo
 [@cjolowicz]: https://github.com/cjolowicz
 [pypi]: https://pypi.org/
 [hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python

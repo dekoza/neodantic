@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "neodantic"
 version = "0.0.0"
-description = "Neodantic"
+description = "Neodantic - async Neo4j OGM using Pydantic."
 authors = ["Dominik Kozaczko <dominik@kozaczko.info>"]
 license = "Apache-2.0"
 readme = "README.md"
@@ -28,8 +28,6 @@ python = "^3.7"
 neo4j = "^5.0.1"
 pydantic = "^1.10.2"
 
-[tool.poetry.scripts]
-neodantic = "neodantic.__main__:main"
 
 [tool.poetry.group.dev.dependencies]
 Pygments = ">=2.10.0"
@@ -58,6 +56,7 @@ xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
 nox = "^2022.8.7"
 nox-poetry = "^1.0.1"
+rich = "^12.6.0"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]

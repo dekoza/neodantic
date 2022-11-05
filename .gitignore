@@ -10,4 +10,5 @@
 /src/*.egg-info/
 __pycache__/
 /.idea/
+/.tmp/
 poetry.lock
